@@ -112,14 +112,6 @@ def main(args):
     global HEADERS
     CLASS = args.__dict__["class"]
     HEADERS["Cookie"] = "CDP_SESSION_PERM=" + args.cookie
-    tmp_dir = "./tmp/"
-
-    if not os.path.isdir(tmp_dir):
-        os.mkdir(tmp_dir)
-
-    for root, dirs, files in os.walk(tmp_dir):
-        for file in files:
-            os.remove(os.path.join(root, file))
 
     html = requests.get(CDP + CLASS)
 
