@@ -99,14 +99,20 @@ def create_hierarchy(tree: Node, total_dir: str):
     dl_url = tree.name.url
     request = requests.get(dl_url, headers=HEADERS, stream=True)  # stream=True, avoid ram consumption
 
-    with open(total_dir, "+wb") as file:
-        for chunk in request.iter_content(chunk_size=100):  # 100 byte per 100byte
-            file.write(chunk)
+    if os.path.exists(total_dir):
+        print(f"File: {total_dir} already exists, skipping" +
+              " (" + str(FINISHED_NUMBER_OF_FILES) + "/" + str(NUMBER_OF_FILES) + ")")
+
+    else:
+        with open(total_dir, "+wb") as file:
+            for chunk in request.iter_content(chunk_size=100):  # 100 byte per 100byte
+                file.write(chunk)
+
+        print("Downloaded: " + "[" + total_dir + "]" + " (" + str(FINISHED_NUMBER_OF_FILES) + "/" + str(NUMBER_OF_FILES) + ")")
 
     FINISHED_NUMBER_OF_FILES += 1
-    print("Downloaded: " + "[" + total_dir + "]" + " (" + str(FINISHED_NUMBER_OF_FILES) + "/" + str(NUMBER_OF_FILES) + ")")
 
-
+    
 def main(args):
     global CLASS
     global HEADERS
