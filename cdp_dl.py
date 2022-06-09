@@ -92,7 +92,7 @@ def create_hierarchy(tree: Node, total_dir: str):
             os.mkdir(total_dir)
 
         for node in tree.children:
-            create_hierarchy(node, total_dir + "/" + node.name.name)
+            create_hierarchy(node, total_dir + "/" + re.sub(re.compile(r"[\"/:<>\\|?*]"), "", node.name.name))
 
         return
 
