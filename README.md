@@ -3,6 +3,8 @@ Permet de télécharger toute l'arborescence d'un compte sur cahier de prépa.
 
 Ce projet est une version améliorée du projet de [Azuxul](https://github.com/Azuxul/cahier-de-prepa-downloader) dans la mesure ou son projet se contente de balayer les liens directs de 1 à 100 sur le site. Cependant, le sien est plus ergonomique car on utilise directement l'identifiant et le mot de passe. Ceci dit, je laisse mon inspiration ici.</br>
 
+[Un projet similaire au mien en Rust que j'ai trouvé crée par piirios](https://github.com/piirios/cdp-parser).
+
 Ces différentes rubriques ont à coeur de faire en sorte que tout le monde, même les non-spécialistes, soit capable d'utiliser cet outil.
 Si vous vous y connaissez déjà vous pouvez ignorer les paragraphes ci-dessous, la documentation est déjà inscrite dans le help du fichier python.
 
