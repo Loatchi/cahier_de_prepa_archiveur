@@ -1,7 +1,10 @@
 # cahier_de_prepa_archiveur
 Permet de télécharger toute l'arborescence d'un compte sur cahier de prépa.
 
-Ce projet est une version améliorée du projet de [Azuxul](https://github.com/Azuxul/cahier-de-prepa-downloader) dans la mesure ou son projet se contente de balayer les liens directs de 1 à 100 sur le site. Cependant, le sien est plus ergonomique car on utilise directement l'identifiant et le mot de passe. Ceci dit, je laisse mon inspiration ici.
+Ce projet est une version améliorée du projet de [Azuxul](https://github.com/Azuxul/cahier-de-prepa-downloader) dans la mesure ou son projet se contente de balayer les liens directs de 1 à 100 sur le site. Cependant, le sien est plus ergonomique car on utilise directement l'identifiant et le mot de passe. Ceci dit, je laisse mon inspiration ici.</br>
+
+Ces différentes rubriques ont à coeur de faire en sorte que tout le monde, même les non-spécialistes, soit capable d'utiliser cet outil.
+Si vous vous y connaissez déjà vous pouvez ignorer les paragraphes ci-dessous, la documentation est déjà inscrite dans le help du fichier python.
 
 ### Comment fonctionne le programme ?
 
@@ -101,7 +104,7 @@ Le programme peut prendre jusqu'à 20/30 min, il va créer un répertoire nommé
 
 En cas de problème, n'hésitez pas à ouvrir un [ticket](https://github.com/Loatchi/cahier_de_prepa_archiveur/issues).</br>
 
-Vous pouvez envoyer des pull request directement; cependant il est toujours intéressant de parler de vos souhaits d'extensions dans la rubrique issue avant.</br>
+Vous pouvez envoyer des pull request directement; cependant il est toujours intéressant de parler de vos souhaits d'extension dans la rubrique issue avant.</br>
 
 **Le code a été fait en une nuit, il n'est certainement pas simple à lire.**
 
