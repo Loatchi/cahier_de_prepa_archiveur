@@ -117,5 +117,6 @@ Vous pouvez envoyer des pull request directement; cependant il est toujours int�
 *  Rajouter des couleurs à l'output du terminal
 *  Télécharger la page d'accueil
 *  Faire en sorte de toute mettre directement dans un zip/tar.gz
+*  Créer une application graphique probablement en Java/Kotlin
 
  
