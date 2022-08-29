@@ -118,11 +118,11 @@ Vous pouvez envoyer des pull request directement; cependant il est toujours int�
 
 ## Possibilités d'extensions
 
-*  Faire en sorte que le programme trouve tout seul CDP_SESSION ou CDP_SESSION_PERM
-*  Utiliser IDENTIFIANT/MDP à la place des cookies
-*  Rajouter des couleurs à l'output du terminal
-*  Télécharger la page d'accueil
-*  Faire en sorte de toute mettre directement dans un zip/tar.gz
-*  Créer une application graphique probablement en Java/Kotlin
+- [ ] Faire en sorte que le programme trouve tout seul CDP_SESSION ou CDP_SESSION_PERM
+- [X] Utiliser IDENTIFIANT/MDP à la place des cookies (voir le fichier `jvm`)
+- [ ] Rajouter des couleurs à l'output du terminal
+- [ ] Télécharger la page d'accueil
+- [ ] Faire en sorte de toute mettre directement dans un zip/tar.gz
+- [ ] Créer une application graphique probablement en Java/Kotlin
 
  
