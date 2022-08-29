@@ -40,15 +40,20 @@ public class Main {
                     directory = arguments[i+1];
                 }
 
+                if(arg.equals("--help")){
+                    printHelpMessage();
+                    return;
+                }
+
             }
         } catch (ArrayIndexOutOfBoundsException e){
-            System.err.println("Impossible to parse arguments, aborting.");
+            System.err.println("Impossible to parse arguments, aborting.\nSee --help.");
         }
 
         if(!gui){
 
             if(login == null || password == null || cdpIdentifier == null)
-                System.err.println("You must initialize all parameters: --login, --password, --cdp-id");
+                System.err.println("You must initialize all parameters: --login, --password, --cdp-id\nSee --help.");
 
             CdpDownloader downloader = new CdpDownloader(login, password,
                     cdpIdentifier, CdpDownloaderEventListener.defaultEventListener());
@@ -63,6 +68,19 @@ public class Main {
             downloader.download(directory);
         }
 
+    }
+
+    private static void printHelpMessage() {
+        String helpMessage = """
+                Une application pour télécharger une archive cahier de prépa sur son ordinateur.
+                Les paramètres:
+                --login STRING      L'identifiant cahier de prépa.
+                --password STRING   Le mot de passe cahier de prépa.
+                --no-gui            Si le paramètre est présent, l'application se lance en
+                                    sans interface graphique (directement dans un terminal)
+                --dir DIRECTORY     Le répertoire où sera téléchargé l'archive (défaut=./cahier_de_prepa)              
+                """;
+        System.out.println(helpMessage);
     }
 
 }
