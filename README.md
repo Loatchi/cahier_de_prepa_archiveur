@@ -1,5 +1,11 @@
-# cahier_de_prepa_archiveur
+# cahier_de_prepa_archiveur 1.0
 Permet de télécharger toute l'arborescence d'un compte sur cahier de prépa.
+
+Le tutoriel fonctionne toujours, cependant les sources utilisées sont celles dans le répertoire `py` car un projet d'interface graphique a été commencé en Java.
+Pour les personnes voulant utiliser Java et non pas Python, le projet est relativement similaire. Le Jar est dans les releases. A noter que dans la version Java, il n'est plus nécessaire de chercher le cookie CDP_SESSION_PERM mais on utilise directement l'identifiant et le mot de passe.
+
+__LE PROJET EN PYTHON NE SERA PAS MAINTENUE, IL SERT DE TRACES, POSSIBLEMENT POUR QUE LES GENS LE FORKENT ET Y TRAVAILLENT__</br>
+__LA SEULE PARTIE MAINTENUE EST DESORMAIS CELLE EN JAVA__
 
 Ce projet est une version améliorée du projet de [Azuxul](https://github.com/Azuxul/cahier-de-prepa-downloader) dans la mesure ou son projet se contente de balayer les liens directs de 1 à 100 sur le site. Cependant, le sien est plus ergonomique car on utilise directement l'identifiant et le mot de passe. Ceci dit, je laisse mon inspiration ici.</br>
 
@@ -112,11 +118,11 @@ Vous pouvez envoyer des pull request directement; cependant il est toujours int�
 
 ## Possibilités d'extensions
 
-*  Faire en sorte que le programme trouve tout seul CDP_SESSION ou CDP_SESSION_PERM
-*  Utiliser IDENTIFIANT/MDP à la place des cookies
-*  Rajouter des couleurs à l'output du terminal
-*  Télécharger la page d'accueil
-*  Faire en sorte de toute mettre directement dans un zip/tar.gz
-*  Créer une application graphique probablement en Java/Kotlin
+- [ ] Faire en sorte que le programme trouve tout seul CDP_SESSION ou CDP_SESSION_PERM
+- [X] Utiliser IDENTIFIANT/MDP à la place des cookies (voir le fichier `jvm`)
+- [ ] Rajouter des couleurs à l'output du terminal
+- [ ] Télécharger la page d'accueil
+- [ ] Faire en sorte de toute mettre directement dans un zip/tar.gz
+- [ ] Créer une application graphique probablement en Java/Kotlin
 
  
