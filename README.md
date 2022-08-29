@@ -1,5 +1,7 @@
-# cahier_de_prepa_archiveur
+# cahier_de_prepa_archiveur 1.0
 Permet de télécharger toute l'arborescence d'un compte sur cahier de prépa.
+
+Le tutoriel fonctionne toujours, cependant les sources utilisées sont celles dans le répertoire `py` car un projet d'interface graphique a été commencé en Java.
 
 Ce projet est une version améliorée du projet de [Azuxul](https://github.com/Azuxul/cahier-de-prepa-downloader) dans la mesure ou son projet se contente de balayer les liens directs de 1 à 100 sur le site. Cependant, le sien est plus ergonomique car on utilise directement l'identifiant et le mot de passe. Ceci dit, je laisse mon inspiration ici.</br>
 
