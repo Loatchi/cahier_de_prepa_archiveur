@@ -1,4 +1,4 @@
-package fr.loatchi.downloader.exceptions;
+package fr.cdp.downloader.exceptions;
 
 public class CdpCredentialException extends Exception {
     private final String login;

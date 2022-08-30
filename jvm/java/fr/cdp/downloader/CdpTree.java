@@ -1,4 +1,4 @@
-package fr.loatchi.downloader;
+package fr.cdp.downloader;
 
 import java.util.ArrayList;
 import java.util.List;

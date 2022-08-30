@@ -1,7 +1,7 @@
-package fr.loatchi.downloader.utils;
+package fr.cdp.downloader.utils;
 
-import fr.loatchi.downloader.CdpDownloaderEventListener;
-import fr.loatchi.downloader.CdpFile;
+import fr.cdp.downloader.CdpDownloaderEventListener;
+import fr.cdp.downloader.CdpFile;
 
 import java.io.*;
 import java.net.HttpURLConnection;

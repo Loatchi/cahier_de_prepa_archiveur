@@ -1,7 +1,7 @@
-package fr.loatchi.downloader;
+package fr.cdp.downloader;
 
-import fr.loatchi.downloader.exceptions.CdpCredentialException;
-import fr.loatchi.downloader.utils.Utils;
+import fr.cdp.downloader.exceptions.CdpCredentialException;
+import fr.cdp.downloader.utils.Utils;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;

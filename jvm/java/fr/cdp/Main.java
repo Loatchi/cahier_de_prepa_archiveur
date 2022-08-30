@@ -1,7 +1,7 @@
-package fr.loatchi;
+package fr.cdp;
 
-import fr.loatchi.downloader.CdpDownloader;
-import fr.loatchi.downloader.CdpDownloaderEventListener;
+import fr.cdp.downloader.CdpDownloader;
+import fr.cdp.downloader.CdpDownloaderEventListener;
 
 import java.io.File;
 

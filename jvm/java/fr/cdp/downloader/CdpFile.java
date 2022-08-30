@@ -1,4 +1,4 @@
-package fr.loatchi.downloader;
+package fr.cdp.downloader;
 
 public class CdpFile {
     long filesize;
