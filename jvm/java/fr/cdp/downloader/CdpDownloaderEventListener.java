@@ -1,6 +1,7 @@
 package fr.cdp.downloader;
 
 import fr.cdp.downloader.exceptions.CdpCredentialException;
+import fr.cdp.downloader.gui.CdpFrame;
 import fr.cdp.downloader.gui.CdpOutputLabel;
 
 import java.util.List;
@@ -73,7 +74,10 @@ public abstract class CdpDownloaderEventListener {
         };
     }
 
-    public static CdpDownloaderEventListener guiEventListener(CdpOutputLabel label){
+    public static CdpDownloaderEventListener guiEventListener(CdpFrame frame){
+
+        CdpOutputLabel label = frame.getCdpOutputLabel();
+
         return new CdpDownloaderEventListener(DEFAULT_WAITING_TIME_BETWEEN_PERCENT) {
             @Override
             public void onCdpFileDownloaded(String location, CdpFile file) {
@@ -82,7 +86,7 @@ public abstract class CdpDownloaderEventListener {
 
             @Override
             public void onCdpFileDownloadException(Exception e, CdpFile file) {
-
+                label.setError(e.getClass().toString());
             }
 
             @Override
@@ -128,6 +132,11 @@ public abstract class CdpDownloaderEventListener {
                 } else {
                     label.setLoginState(false, e.getClass().toString());
                 }
+
+                frame.getLaunchButton().setBackground(null);
+                frame.isDownloading = false;
+                frame.pack();
+
             }
 
             @Override

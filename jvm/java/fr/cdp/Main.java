@@ -2,7 +2,10 @@ package fr.cdp;
 
 import fr.cdp.downloader.CdpDownloader;
 import fr.cdp.downloader.CdpDownloaderEventListener;
+import fr.cdp.downloader.gui.CdpFrame;
 
+import javax.swing.*;
+import java.awt.*;
 import java.io.File;
 
 public class Main {
@@ -66,8 +69,9 @@ public class Main {
             }
 
             downloader.download(directory);
+        } else {
+            CdpFrame frame = new CdpFrame();
         }
-
     }
 
     private static void printHelpMessage() {
