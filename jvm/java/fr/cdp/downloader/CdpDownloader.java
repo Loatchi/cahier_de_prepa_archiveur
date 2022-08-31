@@ -190,12 +190,12 @@ public class CdpDownloader {
 
     public void download(String directory){
         CdpTree root = createTree();
-        System.out.println(root.children);
         if(new File(directory).mkdir()){
             for(CdpTree tree : root.getChildren()){
                 _download(directory, tree);
             }
         }
+        listener.onCdpDownloadFinish(directory);
     }
 
 }
