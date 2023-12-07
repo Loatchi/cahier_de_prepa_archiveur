@@ -80,7 +80,7 @@ public class Main {
                 Les paramètres:
                 --login STRING      L'identifiant cahier de prépa.
                 --password STRING   Le mot de passe cahier de prépa.
-                --no-gui            Si le paramètre est présent, l'application se lance en
+                --no-gui            Si le paramètre est présent, l'application se lance
                                     sans interface graphique (directement dans un terminal)
                 --dir DIRECTORY     Le répertoire où sera téléchargé l'archive (défaut=./cahier_de_prepa)              
                 """;
